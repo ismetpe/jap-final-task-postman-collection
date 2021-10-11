@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "290d0773-72ac-42d7-af55-8c48289da660",
+		"name": "BuyTicketCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "buy-ticket-Ok",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "buy-ticket-Badrequest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "buy-ticket-Badrequest2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userID\": 1,\r\n  \"screeningID\": 35,\r\n  \"numberOfTickets\": 11,\r\n  \"dateOfBuying\": \"2022-10-11T07:34:52.128Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/screenings/buy_ticket",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"screenings",
+						"buy_ticket"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
